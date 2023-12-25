@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="This is a todo tasks app made by me to help me organize my daily tasks." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Abdelrahman Khaled" />
+  <meta name="theme-color" content="red" />
+  <!-- Favicon Icon -->
+  <link rel="icon" href="favicon.avif" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Tasks App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>What's up, <input type="text" placeholder="Name here" id="name-input" /></h1>
+    <div class="tasks-app">
+      <div class="head">
+        <i class="fas fa-bars-staggered"></i>
+        <input type="text" placeholder="Add a new task" id="todo-input" />
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <div class="filter">
+        <ul>
+          <li class="active">All</li>
+          <li>Pending</li>
+          <li>Completed</li>
+        </ul>
+        <button id="clear-all">Clear All</button>
+      </div>
+      <div class="tasks-list"></div>
+      <p class="footer">You have <span>0</span> task(s) to complete</p>
+    </div>
+  </div>
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+</body>
+
+</html>
