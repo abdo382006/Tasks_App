@@ -137,18 +137,6 @@ function displatTasks() {
       <li class="remove-task"><i class="fas fa-trash"></i> Remove</li>
     `;
     options.append(dropDown);
-    // Create Date Span
-    const dateSpan = document.createElement("span");
-    dateSpan.classList.add("date");
-
-    let date = new Date();
-    date.setDate(date.getDate() + 1);
-
-    dateSpan.textContent = `(${
-      date.getMonth() + 1
-    }/${date.getDate()}/${date.getFullYear()})`;
-
-    taskDiv.prepend(dateSpan);
   });
 }
 
